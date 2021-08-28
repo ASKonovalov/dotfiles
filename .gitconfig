@@ -1,0 +1,11 @@
+[user]
+	email = askonovalov3546@gmail.com
+	name = ASKonovalov3546
+[merge]
+	conflictStyle = diff3
+[magit]
+	hideCampaign = true
+[alias]
+    tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[init]
+	defaultBranch = main
