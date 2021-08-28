@@ -344,7 +344,7 @@ compilation-error-regexp-alist-alist
 
 
 ;; Display the name of the current buffer in the title bar
-(setq frame-title-format "GNU Emacs: %b")
+(setq frame-title-format "Emacs: %b")
 
 ;; Electric-modes settings
 (electric-pair-mode    1) ;; автозакрытие {},[],() с переводом курсора внутрь скобок
@@ -445,6 +445,9 @@ compilation-error-regexp-alist-alist
 
 (xah-fly-keys 1)
 
+(add-to-list 'load-path "lisp/which-key.el")
+(require 'which-key)
+(which-key-mode)
 
 ; make typing delete/overwrites selected text
 (delete-selection-mode 1)
