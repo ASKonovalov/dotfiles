@@ -161,10 +161,16 @@ focus_follows_mouse no
 
 hide_edge_borders both
 
-exec --no-startup-id setxkbmap -option 'caps:menu'
+## exec --no-startup-id setxkbmap -option 'caps:menu'
 
 exec i3-sensible-terminal
+exec chromium
 
 bindsym Print exec scrot -e 'mv $f ~/Pictures/Screenshot_`date +%d-%m-%y_%R:%S`.png' && notify-send 'Scrot' 'Screenshot saved!' -t 400 
+
+input * {           
+    xkb_layout us,ru
+    xkb_options grp:ctrl_shift_toggle,caps:menu
+}
 
 
